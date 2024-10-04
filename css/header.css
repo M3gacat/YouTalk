@@ -45,7 +45,11 @@
 }
 
 .header__nav__list__item_arrow {
-    margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 8px;
+    cursor: pointer;
 }
 
 .header__nav__list__item__link {
