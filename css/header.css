@@ -1,3 +1,5 @@
+@import "font.css";
+
 .header {
     display: block;
     position: sticky;
@@ -11,24 +13,56 @@
 
 .row {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-list__item {
+    list-style-type: none;
 }
 
 /* sm-устройства (больше или равно 576px) */
-@media (min-width: 576px) {
+@media (min-width: 375px) {
     /* CSS для: 576px <= ширины <= 767px */
+    .header__logo img{
+        height: 34px;
+        width: 48px;
+    }
 }
 
 /* md-устройства (больше или равно 768px) */
 @media (min-width: 768px) {
     /* CSS для: 768px <= ширины <= 991px */
+    .header__logo img{
+        height: 34px;
+        width: 48px;
+    }
 }
 
 /* lg-устройства (больше или равно 992px) */
 @media (min-width: 992px) {
     /* CSS для: 992px <= ширины <= 1119px */
+    .header__logo img{
+        height: 36px;
+        width: 51px;
+    }
 }
 
 /* xl-устройства (больше или равно 1200px) */
 @media (min-width: 1200px) {
     /* CSS для: ширины >= 1200px */
+    .header__logo img{
+        height: 36px;
+        width: 51px;
+    }
 }
