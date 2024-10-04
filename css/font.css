@@ -3,6 +3,24 @@
     font-style: normal;
     font-weight: 400;
     src: local("Montserrat"),
-        url("font/Montserrat-Regular.woff2") format("woff2"),
-        url("font/Montserrat-Regular.woff") format("woff");
+        url("/font/Montserrat-Regular.woff2") format("woff2"),
+        url("/font/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat-Medium"),
+    url("/font/Montserrat-Medium.woff2") format("woff2"),
+    url("/font/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Montserrat-Bold"),
+    url("/font/Montserrat-Bold.woff2") format("woff2"),
+    url("/font/Montserrat-Bold.woff") format("woff");
 }

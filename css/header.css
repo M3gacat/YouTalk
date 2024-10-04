@@ -13,56 +13,127 @@
 
 .row {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.header__wrap {
-    display: flex;
-    justify-content: space-between;
+
+.header__menu {
+    display: none;
 }
 
 .header__nav {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
-.nav-list__item {
+.header__nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header__nav__list__item {
     list-style-type: none;
 }
 
-/* sm-устройства (больше или равно 576px) */
+.header__nav__list__item_arrow {
+    margin-left: 8px;
+}
+
+.header__nav__list__item__link {
+    text-wrap: nowrap;
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header__nav__list__item__link_arrow::after {
+    margin-left: 8px;
+    content: url('/images/header/arrow_bottom.svg');
+}
+
+.header__button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.header__button a{
+    text-decoration: none;
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 16px;
+    color: #03B2A5;
+    padding: 14px 20px;
+    background-color: #E3F5F5;
+    border-radius: 4px;
+}
+
+.header__button:hover a{
+    background-color: #b4e8e4;
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__button a{
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
 @media (min-width: 375px) {
-    /* CSS для: 576px <= ширины <= 767px */
     .header__logo img{
         height: 34px;
         width: 48px;
     }
 }
 
-/* md-устройства (больше или равно 768px) */
-@media (min-width: 768px) {
-    /* CSS для: 768px <= ширины <= 991px */
+@media (min-width: 430px) {
     .header__logo img{
         height: 34px;
         width: 48px;
     }
 }
 
-/* lg-устройства (больше или равно 992px) */
 @media (min-width: 992px) {
-    /* CSS для: 992px <= ширины <= 1119px */
     .header__logo img{
         height: 36px;
         width: 51px;
+    }
+
+    .container {
+        max-width: 960px;
     }
 }
 
-/* xl-устройства (больше или равно 1200px) */
 @media (min-width: 1200px) {
-    /* CSS для: ширины >= 1200px */
     .header__logo img{
         height: 36px;
         width: 51px;
     }
+
+    .container {
+        max-width: 1200px;
+    }
 }
+
