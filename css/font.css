@@ -10,7 +10,7 @@
 @font-face {
     font-family: "Montserrat-Medium";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     src: local("Montserrat-Medium"),
     url("/font/Montserrat-Medium.woff2") format("woff2"),
     url("/font/Montserrat-Medium.woff") format("woff");
