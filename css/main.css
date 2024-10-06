@@ -110,12 +110,28 @@
         height: 34px;
         width: 48px;
     }
+
+    .main__flex-column__box {
+        width: 100%;
+    }
+
+    .main__flex-column__box__thin {
+        width: 100%;
+    }
 }
 
 @media (min-width: 430px) {
     .header__logo img{
         height: 34px;
         width: 48px;
+    }
+
+    .main__flex-column__box {
+        width: 100%;
+    }
+
+    .main__flex-column__box__thin {
+        width: 100%;
     }
 }
 
@@ -128,6 +144,14 @@
     .container {
         max-width: 960px;
     }
+
+    .main__flex-column__box {
+        width: calc(50% - 12px);
+    }
+
+    .main__flex-column__box__thin {
+        width: calc(33.3333% - 16px);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -139,54 +163,65 @@
     .container {
         max-width: 1200px;
     }
+
+    .main__flex-column__box {
+        width: calc(50% - 12px);
+    }
+
+    .main__flex-column__box__thin {
+        width: calc(33.3333% - 16px);
+    }
 }
 
 .main__flex-row {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    align-items: center;
-    column-gap: 24px;
+    row-gap: 24px;
 }
 
 .main__flex-column {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: space-between;
-    align-items: center;
     row-gap: 24px;
 }
 
-.main__flex-row__box {
+.main__flex-column__box {
     height: 499px;
-    width: 588px;
-    background-color: transparent;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
-    align-items: start;
-    border: solid;
+    border-style: solid;
     border-color: #C1C5CD;
     border-width: 1px;
     border-radius: 16px;
 }
 
-.main__flex-row__box__img {  
-    height: 260px;
-    width: 588px;
-    box-sizing: border-box;
+.main__flex-column__box__thin {
+    height: 499px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-style: solid;
+    border-color: #C1C5CD;
+    border-width: 1px;
+    border-radius: 16px;
 }
 
-.main__flex-row__box__article {  
-    height: 100px;
-    width: 588px;
-    background-color: #fff;
+.main__flex-column__box__article {
+
 }
 
-
-img {
-    border-radius: 16px 16px 0px 0px;
-    overflow: hidden;
+.main__flex-column__box__img {
+    display: block;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
     object-fit: contain;
 }
 
+.main__flex-column_box__img {
+    height: 260px;
+}
+
+* {
+    box-sizing: border-box;
+}
