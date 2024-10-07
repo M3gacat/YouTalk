@@ -10,16 +10,25 @@
 @font-face {
     font-family: "Montserrat-Medium";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     src: local("Montserrat-Medium"),
     url("/font/Montserrat-Medium.woff2") format("woff2"),
     url("/font/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
+    font-family: "Montserrat-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat-SemiBold"),
+    url("/font/Montserrat-SemiBold.woff2") format("woff2"),
+    url("/font/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
     font-family: "Montserrat-Bold";
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     src: local("Montserrat-Bold"),
     url("/font/Montserrat-Bold.woff2") format("woff2"),
     url("/font/Montserrat-Bold.woff") format("woff");
