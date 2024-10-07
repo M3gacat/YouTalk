@@ -1,14 +1,20 @@
 @import "font.css";
 
 .header {
-    display: block;
     position: sticky;
+    top: 0;
     background-color: #fff;
+    z-index: 100;
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid #EFF5FB;
 }
 
 .row {
@@ -37,10 +43,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__nav__list_gap {
-    column-gap: 30px;
 }
 
 .header__nav__list__item {
@@ -115,18 +117,22 @@
     }
 
     .main__flex-column__box {
+        height: 484px;
+    }
+
+    .box-width_big {
         width: 100%;
     }
 
-    .main__flex-column__box__thin {
+    .box-width_small {
         width: 100%;
     }
 
-    .img_height-big {
+    .img-height_big {
         height: 206px;
     }
 
-    .img_height-small {
+    .img-height_small {
         height: 206px;
     }
 }
@@ -138,30 +144,30 @@
     }
 
     .main__flex-column__box {
+        height: 466px;
+    }
+
+    .box-width_big {
         width: 100%;
     }
 
-    .main__flex-column__box__thin {
-        width: calc(50% - 24px);
+    .box-width_small {
+        width: 100%;
     }
 
-    .img_height-big {
+    .img-height_big {
         height: 206px;
     }
 
-    .img_height-small {
+    .img-height_small {
         height: 206px;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .header__logo img{
-        height: 36px;
-        width: 51px;
-    }
-
-    .container {
-        max-width: 960px;
+        height: 34px;
+        width: 48px;
     }
 
     .header__nav__list_gap {
@@ -169,18 +175,58 @@
     }
 
     .main__flex-column__box {
-        width: calc(50% - 12px);
+        height: 599px;
     }
 
-    .main__flex-column__box__thin {
+    .box-width_big {
+        width: 100%;
+    }
+
+    .box-width_small {
+        width: calc(50% - 24px);
+    }
+
+    .img-height_big {
+        height: 404px;
+    }
+
+    .img-height_small {
+        height: 206px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .header__logo img{
+        height: 36px;
+        width: 51px;
+    }
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .header__nav__list_gap {
+        column-gap: 16px;
+    }
+
+    .main__flex-column__box {
+        height: 499px;
+    }
+
+    .box-width_big {
+        width: calc(50% - 24px);
+    }
+
+    .box-width_small {
         width: calc(33.3333% - 16px);
     }
 
-    .img_height-big {
+    .img-height_big {
         height: 260px;
     }
 
-    .img_height-small {
+    .img-height_small {
         height: 206px;
     }
 }
@@ -200,18 +246,22 @@
     }
 
     .main__flex-column__box {
+        height: 499px;
+    }
+
+    .box-width_big {
         width: calc(50% - 12px);
     }
 
-    .main__flex-column__box__thin {
+    .box-width_small {
         width: calc(33.3333% - 16px);
     }
 
-    .img_height-big {
+    .img-height_big {
         height: 260px;
     }
 
-    .img_height-small {
+    .img-height_small {
         height: 260px;
     }
 }
@@ -231,23 +281,29 @@
 }
 
 .main__flex-column__box {
-    height: 499px;
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     border-style: solid;
     border-color: #C1C5CD;
     border-width: 1px;
     border-radius: 16px;
+    cursor: pointer;
 }
 
-.main__flex-column__box__thin {
-    height: 499px;
+.main__flex-column__box__tag-container {
+    position: absolute;
     display: flex;
-    flex-flow: column nowrap;
-    border-style: solid;
-    border-color: #C1C5CD;
-    border-width: 1px;
-    border-radius: 16px;
+    flex-direction: column;
+    column-gap: 4px;
+    margin: 0;
+}
+
+.main__flex-column__box__tag {
+    background-color: #ffffff;
+    opacity: 70%;
+    border: 1px solid #C1C5CD;
+    border-radius: 24px;
 }
 
 .main__flex-column__box__article {
@@ -267,6 +323,37 @@
     border-top-right-radius: 16px;
     object-fit: cover;
 }
+
+.main__flex-column__box__article__author {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #494949;
+}
+
+.main__flex-column__box__article__content {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.main__flex-column__box__article__footer {
+    position: absolute;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #868686;
+}
+
+.main__flex-column__box__article__footer {
+    left: 16px;
+    bottom: 4px;
+}
+
+
 
 * {
     box-sizing: border-box;
