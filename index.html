@@ -6,6 +6,7 @@
     <title>Youtalk-Blog</title>
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
     <link href="./css/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="container">
         <div class="flex-row jc-space-between">
             <div class="flex-row jc-center">
-                <img class="header__img-size" alt="YouTalk" src="images/header/logo.svg">
+                <img alt="YouTalk" class="header__img-size" src="images/header/logo.svg">
             </div>
             <nav class="header__nav">
                 <div class="flex-row jc-space-between">
@@ -57,37 +58,42 @@
 <div class="line"></div>
 <main>
     <div class="container">
+        <div class="main__links flex-row jc-start fw-nowrap">
+            <a href="">Главная</a>
+            <img alt="Стрелка вправо" src="./images/main/arrow_right.svg">
+            <a href="">Блог</a>
+        </div>
         <div class="flex-row jc-start">
             <h1 class="main__title">Блог</h1>
         </div>
         <div class="main__tags-container flex-row jc-start">
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag flex-row jc-center">
                 <img alt="Смайл" src="./images/main/SmilingFace.svg">
                 <p>Все</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Самооценка и самопринятие</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag flex-row jc-center">
                 <img alt="Единорог" src="./images/main/unicorn.svg">
                 <p>Self</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Чувства и эмоции</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Тревога</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Упражнения</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Психология питания</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Насилие</p>
             </div>
-            <div class="main__flex-tags-container__tag">
+            <div class="main__tags-container__tag">
                 <p>Личное здоровье</p>
             </div>
         </div>
@@ -132,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main__flex-row">
+            <div class="main__flex-row  flex-row jc-space-between">
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
@@ -246,8 +252,59 @@
         </div>
     </div>
 </main>
-<footer id="footer">
-
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__box flex-row jc-space-between ai-start">
+            <div class="flex-row jc-space-between">
+                <ul class="footer__content-list flex-column ai-start fw-nowrap">
+                    <li class="lst-none">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Тарифы</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Для бизнеса</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Психологам</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Faq</a>
+                    </li>
+                </ul>
+                <ul class="footer__content-list flex-column ai-start fw-nowrap">
+                    <li class="lst-none">
+                        <a href="">Блог</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Вебинары</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Подкаст</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Сертификат</a>
+                    </li>
+                    <li class="lst-none">
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1>dsadsadas</h1>
+            </div>
+            <div class="footer__box__brands flex-column jc-start ai-start fw-nowrap">
+                <img src="./images/footer/logo.svg" alt="Логотип">
+                <div class="footer__box__brands__logo flex-row jc-start ai-start fw-nowrap">
+                    <img src="./images/footer/vk.svg" alt="VK">
+                    <img src="./images/footer/tg.svg" alt="VK">
+                    <img src="./images/footer/twitter.svg" alt="VK">
+                    <img src="./images/footer/dzen.svg" alt="VK">
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

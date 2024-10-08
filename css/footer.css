@@ -1,0 +1,31 @@
+@import "font.css";
+
+.footer {
+    background-color: #2963A3;
+    margin-top: 96px;
+}
+
+.footer__box {
+    margin-top: 40px;
+}
+
+.footer__content-list {
+    row-gap: 16px;
+}
+
+.footer__content-list a {
+    text-wrap: nowrap;
+    text-decoration: none;
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.footer__box__brands {
+    row-gap: 40px;
+}
+
+.footer__box__brands__logo {
+    column-gap: 16px;
+}

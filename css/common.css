@@ -20,10 +20,23 @@
     width: 100%;
     border-bottom: 1px solid #EFF5FB;
 }
+/* Iphone SE */
+@media (min-width: 375px) {
+    .line {
+        margin-bottom: 24px;
+    }
+}
+/* Iphone 14 Pro Max */
+@media (min-width: 430px) {
+    .line {
+        margin-bottom: 16px;
+    }
+}
 
 .flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,6 +45,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.fw-nowrap {
+    flex-wrap: nowrap;
 }
 
 .jc-space-between {
@@ -48,6 +65,10 @@
 
 .jc-end {
     justify-content: end;
+}
+
+.ai-start {
+    align-items: start;
 }
 
 .ai-end {
