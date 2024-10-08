@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Youtalk-Blog</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header class="header">
@@ -16,10 +17,10 @@
             <nav class="header__nav">
                 <ul class="header__nav__list header__nav__list_gap">
                     <li class="header__nav__list__item">
-                    <a class="header__nav__list__item__link" href="">Тарифы</a>
+                        <a class="header__nav__list__item__link" href="">Тарифы</a>
                     </li>
                     <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="">О нас</a>
+                        <a class="header__nav__list__item__link" href="#footer">О нас</a>
                     </li>
                     <li class="header__nav__list__item">
                         <a class="header__nav__list__item__link" href="">Для бизнеса</a>
@@ -53,16 +54,50 @@
 <div class="line"></div>
 <main>
     <div class="container">
+        <div class="main__title">
+            <h1>Блог</h1>
+        </div>
+        <div class="main__flex-tags-container">
+            <div class="main__flex-tags-container__tag">
+                <img alt="Смайл" src="./images/main/SmilingFace.svg">
+                <p>Все</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Самооценка и самопринятие</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <img alt="Единорог" src="./images/main/unicorn.svg">
+                <p>Self</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Чувства и эмоции</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Тревога</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Упражнения</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Психология питания</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Насилие</p>
+            </div>
+            <div class="main__flex-tags-container__tag">
+                <p>Личное здоровье</p>
+            </div>
+        </div>
         <div class="main__flex-column">
             <div class="main__flex-row">
                 <div class="main__flex-column__box box-width_big">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Самооценка и самопринятие</p>
                         </div>
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -79,7 +114,7 @@
                 <div class="main__flex-column__box box-width_big">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -98,11 +133,11 @@
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Самооценка и самопринятие</p>
                         </div>
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -111,14 +146,15 @@
                     <div class="main__flex-column__box__article">
                         <h1>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h1>
                         <p class="main__flex-column__box__article__author">Автор: Лиза Файнтух</p>
-                        <p class="main__flex-column__box__article__content">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                        <p class="main__flex-column__box__article__content">Изначально термин «эмоциональное
+                            профессиональной сфере и относился...</p>
                         <p class="main__flex-column__box__article__footer">21.08.2021</p>
                     </div>
                 </div>
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -127,14 +163,15 @@
                     <div class="main__flex-column__box__article">
                         <h1>Как не утонуть в тревоге и управлять своими страхами</h1>
                         <p class="main__flex-column__box__article__author">Автор: Екатерина Бельтюкова</p>
-                        <p class="main__flex-column__box__article__content">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                        <p class="main__flex-column__box__article__content">Один из самых важных навыков, которые может
+                            дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
                         <p class="main__flex-column__box__article__footer">11.08.2021</p>
                     </div>
                 </div>
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -143,14 +180,15 @@
                     <div class="main__flex-column__box__article">
                         <h1>Как управлять своими эмоциями: 8 шагов</h1>
                         <p class="main__flex-column__box__article__author">Автор: Екатерина Бельтюкова</p>
-                        <p class="main__flex-column__box__article__content">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                        <p class="main__flex-column__box__article__content">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ
+                            свои негативные эмоции. Пришло время об этом написать!</p>
                         <p class="main__flex-column__box__article__footer">07.08.2021</p>
                     </div>
                 </div>
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -158,7 +196,8 @@
                          src="./images/main/grandy.jpg"/>
                     <div class="main__flex-column__box__article">
                         <h1>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h1>
-                        <p class="main__flex-column__box__article__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+                        <p class="main__flex-column__box__article__author">Автор: Лиза Файнтух под редакцией Екатерины
+                            Бельтюковой</p>
                         <p class="main__flex-column__box__article__content">Изначально термин «эмоциональное я...</p>
                         <p class="main__flex-column__box__article__footer">21.08.2021</p>
                     </div>
@@ -166,7 +205,7 @@
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -175,14 +214,15 @@
                     <div class="main__flex-column__box__article">
                         <h1>Как не утонуть в тревоге и управлять своими страхами</h1>
                         <p class="main__flex-column__box__article__author">Автор: Екатерина Бельтюкова</p>
-                        <p class="main__flex-column__box__article__content">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                        <p class="main__flex-column__box__article__content">Один из самых важных навыков, которые может
+                            дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
                         <p class="main__flex-column__box__article__footer">11.08.2021</p>
                     </div>
                 </div>
                 <div class="main__flex-column__box box-width_small">
                     <div class="main__flex-column__box__tag-container">
                         <div class="main__flex-column__box__tag">
-                            <img src="./images/main/unicorn.svg">
+                            <img alt="Единорог" src="./images/main/unicorn.svg">
                             <p>Self</p>
                         </div>
                     </div>
@@ -191,15 +231,19 @@
                     <div class="main__flex-column__box__article">
                         <h1>Как управлять своими эмоциями: 8 шагов</h1>
                         <p class="main__flex-column__box__article__author">Автор: Екатерина Бельтюкова</p>
-                        <p class="main__flex-column__box__article__content">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                        <p class="main__flex-column__box__article__content">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ
+                            свои негативные эмоции. Пришло время об этом написать!</p>
                         <p class="main__flex-column__box__article__footer">07.08.2021</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="main__flex-button-container">
+            <button class="main__flex-button-container__btn">Ещё</button>
+        </div>
     </div>
 </main>
-<footer>
+<footer id="footer">
 
 </footer>
 </body>
