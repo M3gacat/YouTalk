@@ -3,7 +3,67 @@
     margin-right: auto;
 }
 
+/* Ipad pro */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+/* Other */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
 .line {
     width: 100%;
     border-bottom: 1px solid #EFF5FB;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-start {
+    justify-content: start;
+}
+
+.jc-end {
+    justify-content: end;
+}
+
+.ai-end {
+    align-items: end;
+}
+
+.lst-none {
+    list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Other */
+@media (min-width: 1200px) {
+
 }

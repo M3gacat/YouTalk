@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Youtalk-Blog</title>
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/main.css" rel="stylesheet" type="text/css">
     <link href="./css/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header class="header">
     <div class="container">
-        <div class="row">
-            <div class="header__logo">
-                <img alt="YouTalk" src="images/header/logo.svg">
+        <div class="flex-row jc-space-between">
+            <div class="flex-row jc-center">
+                <img class="header__img-size" alt="YouTalk" src="images/header/logo.svg">
             </div>
             <nav class="header__nav">
-                <ul class="header__nav__list header__nav__list_gap">
-                    <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="">Тарифы</a>
-                    </li>
-                    <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="#footer">О нас</a>
-                    </li>
-                    <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="">Для бизнеса</a>
-                    </li>
-                    <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="">Психологам</a>
-                    </li>
-                    <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="">Сертификаты</a>
-                    </li>
-                    <div class="header__nav__list__item_arrow">
-                        <li class="header__nav__list__item">
-                            <a class="header__nav__list__item__link" href="">Материалы</a>
+                <div class="flex-row jc-space-between">
+                    <ul class="header__nav__list flex-row jc-space-between">
+                        <li class="lst-none">
+                            <a class="header__nav__list__link" href="">Тарифы</a>
                         </li>
-                        <img alt="Список" src="images/header/arrow_bottom.svg">
-                    </div>
-                    <li class="header__nav__list__item">
-                        <a class="header__nav__list__item__link" href="">FAQ</a>
-                    </li>
-                </ul>
+                        <li class="lst-none">
+                            <a class="header__nav__list__link" href="#footer">О нас</a>
+                        </li>
+                        <li class="lst-none">
+                            <a class="header__nav__list__link" href="">Для бизнеса</a>
+                        </li>
+                        <li class="lst-none">
+                            <a class="header__nav__list__link" href="">Психологам</a>
+                        </li>
+                        <li class="lst-none">
+                            <a class="header__nav__list__link" href="">Сертификаты</a>
+                        </li>
+                        <div class="header__nav__list__link_img flex-row ai-end">
+                            <li class="lst-none">
+                                <a class="header__nav__list__link" href="">Материалы</a>
+                            </li>
+                            <img alt="Список" src="images/header/arrow_bottom.svg">
+                        </div>
+                        <li class="lst-none">
+                            <a class="header__nav__list__link" href="">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <div class="header__button">
-                <a href>Подобрать психолога</a>
+            <div class="flex-row jc-end">
+                <button class="header__button">Подобрать психолога</button>
             </div>
-            <div class="header__menu">
-                <img alt="Меню" src="images/header/menu.svg">
+            <div class="header__burger">
+                <img alt="Меню" src="images/header/burger.svg">
             </div>
         </div>
     </div>
@@ -54,10 +57,10 @@
 <div class="line"></div>
 <main>
     <div class="container">
-        <div class="main__title">
-            <h1>Блог</h1>
+        <div class="flex-row jc-start">
+            <h1 class="main__title">Блог</h1>
         </div>
-        <div class="main__flex-tags-container">
+        <div class="main__tags-container flex-row jc-start">
             <div class="main__flex-tags-container__tag">
                 <img alt="Смайл" src="./images/main/SmilingFace.svg">
                 <p>Все</p>
