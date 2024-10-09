@@ -16,7 +16,7 @@ main .container {
     }
 }
 
-@media (min-width: 430px) {
+@media (min-width: 414px) {
     .main__title {
         font-size: 32px;
         line-height: 40px;
@@ -67,7 +67,7 @@ main .container {
     }
 }
 
-@media (min-width: 430px) {
+@media (min-width: 414px) {
     .main__links {
         margin-bottom: 32px;
     }
@@ -150,7 +150,7 @@ main .container {
 
 }
 
-@media (min-width: 430px) {
+@media (min-width: 414px) {
 
 
     .main__flex-column__box {

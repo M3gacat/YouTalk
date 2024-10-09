@@ -1,31 +1,39 @@
+html {
+    background-color: #818181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
+
     background-color: #ffffff;
 }
-
-@media (min-width: 320px) {
+/* Iphone SE*/
+@media (min-width: 375px) {
     body {
-        width: 320px;
+        width: 375px;
     }
 }
-
-@media (min-width: 430px) {
+/* Iphone 14 pro max*/
+@media (min-width: 414px) {
     body {
         width: 414px;
     }
 }
-
+/* Ipad mini*/
 @media (min-width: 768px) {
     body {
         width: 768px;
     }
 }
-
+/* Ipad pro */
 @media (min-width: 1024px) {
     body {
         width: 1024px;
     }
 }
-
+/* Other */
 @media (min-width: 1200px) {
     body {
         width: 1440px;
@@ -36,17 +44,28 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-@media (min-width: 1024px) {
+/* Iphone SE*/
+@media (min-width: 375px) {
     .container {
-        max-width: 960px;
+        max-width: 288px;
     }
 }
-
+/* Iphone 14 pro max*/
+@media (min-width: 414px) {
+    .container {
+        max-width: 374px;
+    }
+}
+/* Ipad mini*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 728px;
+    }
+}
 /* Ipad pro */
 @media (min-width: 1024px) {
     .container {
-        max-width: 1024px;
+        max-width: 960px;
     }
 }
 /* Other */
@@ -78,6 +97,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .flex-column {
@@ -121,10 +141,4 @@ body {
 
 * {
     box-sizing: border-box;
-}
-
-
-/* Other */
-@media (min-width: 1200px) {
-
 }
