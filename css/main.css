@@ -15,13 +15,14 @@ main .container {
 
 .main__title {
     font-family: Montserrat-Bold, sans-serif;
+    margin: 0;
 }
 
 @media (min-width: 375px) {
     .main__title {
         font-size: 24px;
         line-height: 32px;
-        margin: 0 0 24px;
+        padding: 0 0 24px;
     }
 }
 

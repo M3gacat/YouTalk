@@ -12,7 +12,7 @@ body {
 /* Iphone SE*/
 @media (min-width: 375px) {
     body {
-        width: 375px;
+        width: 320px;
     }
 }
 /* Iphone 14 pro max*/
@@ -105,6 +105,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .fw-nowrap {
