@@ -1,9 +1,12 @@
 @import "font.css";
 
+header .container {
+    background-color: #ffffff;
+}
+
 .header {
     position: sticky;
     top: 0;
-    background-color: #fff;
     z-index: 100;
     margin: 14px 0;
 }

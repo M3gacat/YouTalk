@@ -1,5 +1,9 @@
 @import "font.css";
 
+main .container {
+    background-color: #ffffff;
+}
+
 .main__title {
     font-family: Montserrat-Bold, sans-serif;
 }
