@@ -1,5 +1,14 @@
 @import "font.css";
 
+@media (min-width: 1200px) {
+    main {
+        background-image: url("../images/main/background.svg");
+        background-repeat: no-repeat;
+        background-position: center calc(401px - 76px);
+    }
+}
+
+
 main .container {
     background-color: #ffffff;
 }
@@ -20,7 +29,7 @@ main .container {
     .main__title {
         font-size: 32px;
         line-height: 40px;
-        margin: 0 0 24px;
+        padding: 0 0 24px;
     }
 }
 
@@ -28,12 +37,12 @@ main .container {
     .main__title {
         font-size: 48px;
         line-height: 56px;
-        margin: 0 0 32px;
+        padding: 0 0 32px;
     }
 }
 
 .main__links {
-    margin-left: 6px;
+    padding-left: 6px;
 }
 
 .main__links a{
@@ -63,7 +72,8 @@ main .container {
 
 @media (min-width: 375px) {
     .main__links {
-        margin-bottom: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 }
 
@@ -88,19 +98,19 @@ main .container {
 .main__tags-container {
     column-gap: 8px;
     row-gap: 8px;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
 }
 
 @media (min-width: 375px) {
     .main__tags-container {
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
         overflow-x: scroll;
     }
 }
 
 @media (min-width: 1024px) {
     .main__tags-container {
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         overflow-x: hidden;
     }
 }
