@@ -136,10 +136,6 @@ body {
     align-items: end;
 }
 
-.lst-none {
-    list-style-type: none;
-}
-
 * {
     box-sizing: border-box;
 }

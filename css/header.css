@@ -9,6 +9,14 @@ header .container {
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #EFF5FB;
+    background-color: #ffffff;
+}
+
+/* Other */
+@media (min-width: 1200px) {
+    .header {
+        box-shadow: 0 2px 2px #EFF2F2;
+    }
 }
 
 /* Iphone SE */
@@ -127,7 +135,11 @@ header .container {
     }
 }
 
-.header__nav__list__link {
+.header__nav__list li {
+    list-style-type: none;
+}
+
+.header__nav__list li a {
     font-family: Montserrat-Medium, sans-serif;
     font-size: 14px;
     line-height: 114%;
@@ -139,6 +151,10 @@ header .container {
 .header__nav__list__link_img {
     column-gap: 8px;
     cursor: pointer;
+}
+
+.header__nav__list__link_img li {
+    list-style-type: none;
 }
 
 .header__button{

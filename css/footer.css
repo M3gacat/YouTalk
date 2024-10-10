@@ -8,18 +8,17 @@
 
 .footer__box {
     row-gap: 23px;
-    padding: 40px 0;
+    border-top: 1px solid #ffffff;
 }
 
-@media (max-width: 1024px) {
-    .footer__content {
-        column-gap: 30px;
+@media (min-width: 375px) {
+    .footer__box {
+        padding: 35px 0 0 0;
     }
 }
-
-@media (max-width: 1200px) {
-    .footer__content {
-        column-gap: 93px;
+@media (min-width: 1024px) {
+    .footer__box {
+        padding: 40px 0 0 0;
     }
 }
 
@@ -29,7 +28,11 @@
     padding: 0;
 }
 
-.footer__content-list a {
+.footer__content-list li {
+    list-style-type: none;
+}
+
+.footer__content-list li a {
     text-wrap: nowrap;
     text-decoration: none;
     font-family: Montserrat-Bold, sans-serif;
@@ -38,13 +41,26 @@
     color: #ffffff;
 }
 
-@media (max-width: 1024px) {
+/* Iphone SE*/
+@media (min-width: 768px) {
+    .footer__middle-content {
+        width: 100%;
+    }
+}
+/* Iphone 14Pro Max*/
+@media (min-width: 768px) {
+    .footer__middle-content {
+        width: 375px;
+    }
+}
+/* Ipda mini*/
+@media (min-width: 768px) {
     .footer__middle-content {
         width: 450px;
     }
 }
-
-@media (max-width: 1200px) {
+/* other */
+@media (min-width: 1200px) {
     .footer__middle-content {
         width: 486px;
     }
@@ -91,10 +107,54 @@
     color: #9D9D9D;
 }
 
-.footer__box__brands {
+.footer__box-brands {
     row-gap: 40px;
 }
 
-.footer__box__brands__logo {
+.footer__box-brands__logo {
     column-gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer__box-end {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
+
+.footer__box-end__container {
+    border-top: 1px solid #9D9D9D4D;
+
+
+}
+
+@media (min-width: 320px) {
+    .footer__box-end__container {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 37px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer__box-end__container {
+        margin-top: 27px;
+        padding-top: 16px;
+        padding-bottom: 23px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__box-end__container {
+        margin-top: 24px;
+        padding-bottom: 17px;
+    }
+}
+
+.footer__box-end text {
+    margin-right: 48px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffffB3;
 }
