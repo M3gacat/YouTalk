@@ -155,6 +155,11 @@
     right: 0;
     cursor: pointer;
 }
+
+.footer__middle-content button:hover {
+background-color: #35B3A9;
+}
+
 @media  (max-width: 430px) {
     .footer__middle-content button {
         display: none;

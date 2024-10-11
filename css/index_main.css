@@ -313,7 +313,7 @@ main .container {
     justify-content: center;
 }
 
-.main__flex-button-container__btn {
+.main__flex-button-container button {
     width: 182px;
     height: 48px;
     background-color: #35B3A9;
@@ -323,6 +323,10 @@ main .container {
     font-family: Montserrat-Bold, sans-serif;
     font-size: 16px;
     line-height: 24px;
+}
+
+.main__flex-button-container button:hover {
+    background-color: #03A094;
 }
 
 .main__flex-column {
