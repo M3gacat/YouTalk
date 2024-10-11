@@ -127,12 +127,6 @@ main .container {
     cursor: pointer;
 }
 
-
-
-
-
-
-
 @media (min-width: 375px) {
     .main__flex-column__box {
         height: 484px;

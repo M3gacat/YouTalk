@@ -51,42 +51,6 @@ header .container {
         width: 48px;
     }
 }
-/* Iphone 14 Pro Max */
-@media (min-width: 430px) {
-    .header__img-size {
-        height: 34px;
-        width: 48px;
-    }
-}
-/* Ipad mini */
-@media (min-width: 768px) {
-    .header__img-size {
-        height: 34px;
-        width: 48px;
-    }
-}
-
-/* Iphone SE */
-@media (min-width: 375px) {
-    .header__img-size {
-        height: 34px;
-        width: 48px;
-    }
-}
-/* Iphone 14 Pro Max */
-@media (min-width: 430px) {
-    .header__img-size {
-        height: 34px;
-        width: 48px;
-    }
-}
-/* Ipad mini */
-@media (min-width: 768px) {
-    .header__img-size {
-        height: 34px;
-        width: 48px;
-    }
-}
 /* Ipad pro */
 @media (min-width: 1024px) {
     .header__img-size {
@@ -94,13 +58,7 @@ header .container {
         width: 51px;
     }
 }
-/* Other */
-@media (min-width: 1200px) {
-    .header__img-size {
-        height: 36px;
-        width: 51px;
-    }
-}
+
 
 .header__nav {
     width: 100%;
