@@ -1,0 +1,73 @@
+@import "font.css";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+article {
+    grid-column: 1 / span 7;
+}
+
+.article-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.article-container h1 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    color: #333333;
+    margin: 0;
+}
+
+.article-author {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+}
+
+.article-author p {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #494949;
+}
+
+.dot {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: #494949;
+    margin: 0 8px;
+}
+
+.article-container h4 {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+aside {
+    grid-column: 10 / span 13;
+}
+
+.aside-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.aside-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: 1px solid #030303;
+    border-radius: 4px;
+}
