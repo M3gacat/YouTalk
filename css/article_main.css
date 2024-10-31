@@ -1,16 +1,17 @@
 @import "font.css";
 
-main {
-    font-family: Montserrat-Medium, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #333333;
-    margin: 0;
-}
+
 
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.grid-7 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
 }
@@ -28,6 +29,7 @@ h3 {
     font-size: 24px;
     line-height: 32px;
     color: #333333;
+    margin: 0;
 }
 
 h4 {
@@ -37,11 +39,25 @@ h4 {
     color: #333333;
 }
 
+ul {
+    list-style-type: disc;
+    color: #03B2A5;
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
 article {
     grid-column: 1 / span 7;
 }
 
-.article-container {
+.article-container {   
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -69,14 +85,69 @@ article {
     margin: 0 8px;
 }
 
-.block-content ul {
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #494949;
-    list-style: none;
+.block-content {
+    grid-column: 1 / span 6;
 }
 
+.block-content li p{
+    text-decoration: underline;
+}
+
+.box-color {
+    position: relative;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 24px 0;
+}
+
+.box-color-blue {
+    padding-top: 34px;
+    background-color: #F3F7FE;
+}
+
+.box-task-blue {
+    background-color: #F3F7FE;
+}
+
+.box-task-peach {
+    background-color: #FEFAEC;
+}
+
+.box-task-pink {
+    background-color: #FFF3EB;
+}
+
+.box-task h4{
+    margin: 0;
+}
+
+.box-task p{
+    margin: 8px 0 0 0;
+}
+
+.box-color img {
+    position: absolute;
+    content: none;
+    top: 24px;
+    left: 24px;
+}
+
+.box-color-blue p:first-of-type{
+    font-style: italic;
+    margin: 0;
+}
+
+.box-color-blue p:last-of-type {
+    font-weight: bold;
+    margin: 8px 0 0 0;
+}
+
+.subscription {
+    line-height: 130%;
+    letter-spacing: 0.25px;
+    color: #868686;
+    margin-bottom: 0;
+}
 
 aside {
     grid-column: 10 / span 13;
