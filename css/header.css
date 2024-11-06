@@ -1,103 +1,101 @@
 @import "font.css";
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #EFF5FB;
+    background-color: #ffffff;
+    z-index: 100;
+}
 
 header .container {
     background-color: #ffffff;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #EFF5FB;
-    background-color: #ffffff;
-}
-
 /* Other */
 @media (min-width: 1200px) {
-    .header {
+    header {
         box-shadow: 0 2px 2px #EFF2F2;
     }
 }
 
 /* Iphone SE */
 @media (min-width: 375px) {
-    .header {
+    header {
         padding: 8px;
     }
 }
 /* Iphone 14 Pro Max */
 @media (min-width: 430px) {
-    .header {
+    header {
         padding: 16px 4px 16px;
     }
 }
 /* Ipad mini */
 @media (min-width: 768px) {
-    .header {
+    header {
         padding: 18px;
     }
 }
 /* Ipad pro */
 @media (min-width: 768px) {
-    .header {
+    header {
         padding: 14px;
     }
 }
 
 /* Iphone SE */
 @media (min-width: 375px) {
-    .header__img-size {
+    .header-img {
         height: 34px;
         width: 48px;
     }
 }
 /* Ipad pro */
 @media (min-width: 1024px) {
-    .header__img-size {
+    .header-img {
         height: 36px;
         width: 51px;
     }
 }
 
-
-.header__nav {
+header nav {
     width: 100%;
 }
 
 @media (max-width: 768px) {
-    .header__nav {
+    header nav {
         display: none;
     }
 }
 
-.header__nav__list {
+header nav ul {
     text-wrap: nowrap;
 }
 
 /* Ipad mini */
 @media (min-width: 768px) {
-    .header__nav__list {
+    header nav ul {
         column-gap: 16px;
     }
 }
 /* Ipad pro */
 @media (min-width: 1024px) {
-    .header__nav__list {
+    header nav ul {
         column-gap: 16px;
     }
 }
 /* Other */
 @media (min-width: 1200px) {
-    .header__nav__list {
+    header nav ul {
         column-gap: 30px;
     }
 }
 
-.header__nav__list li {
+header nav ul li {
     list-style-type: none;
 }
 
-.header__nav__list li a {
+header nav ul a {
     font-family: Montserrat-Medium, sans-serif;
     font-size: 14px;
     line-height: 114%;
@@ -106,16 +104,16 @@ header .container {
     color: #333;
 }
 
-.header__nav__list__link_img {
+.header-nav_link-img {
     column-gap: 8px;
     cursor: pointer;
 }
 
-.header__nav__list__link_img li {
+.header-nav_link-img li {
     list-style-type: none;
 }
 
-.header__button{
+header button{
     background-color: #E3F5F5;
     font-family: Montserrat-Bold, sans-serif;
     font-size: 16px;
@@ -124,14 +122,15 @@ header .container {
     border-style: none;
     border-radius: 4px;
     text-wrap: nowrap;
+    cursor: pointer;
 }
 
-.header__button:hover{
+header button:hover{
     background-color: #b4e8e4;
 }
 /* Ipad mini */
 @media (max-width: 768px) {
-    .header__button {
+    header button {
         display: none;
     }
 }
