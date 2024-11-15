@@ -146,6 +146,10 @@ main .container {
     margin: 6px 8px 6px 4px;
 }
 
+.main__flex-button-container {
+    margin-bottom: 96px;
+}
+
 @media (min-width: 375px) {
     .main__flex-column__box {
         height: 484px;
